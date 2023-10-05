@@ -1,0 +1,224 @@
+.navbar {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @media screen and (max-width:381px) {
+       gap: 5px;
+    }
+
+    img{
+        @media screen and (max-width:381px) {
+            width: 28px;
+            height: 30px;
+        }
+    }
+
+    p {
+        color: #0B132A;
+        font-family: Rubik;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        @media screen and (max-width:381px) {
+            font-size: 16px;
+        }
+    }
+
+    span {
+        color: #0B132A;
+        font-family: Rubik;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        @media screen and (max-width:381px) {
+            font-size: 16px;
+        }
+    }
+}
+
+#menu {
+    display: none;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    @media screen and (max-width:381px) {
+        gap: 5px;
+    }
+}
+.toggle {
+    font-size: 30px;
+    color: #F53855;
+    display: none;
+
+    @media screen and (max-width:811px) {
+        display: block;
+    }
+
+    @media screen and (max-width:381px) {
+        font-size: 26px;
+    }
+}
+
+#menu:checked~.navbar__menu {
+    left: 0;
+}
+
+.navbar__menu {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    transition: 0.4s;
+
+    @media screen and (max-width:971px) {
+        gap: 20px;
+    }
+
+    @media screen and (max-width:881px) {
+        gap: 10px;
+    }
+
+    @media screen and (max-width:811px) {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 40%;
+        box-shadow: 0 0 10px #F53838;
+        height: 50vh;
+        margin-top: 80px;
+        flex-direction: column;
+        gap: 40px;
+        align-items: start;
+        padding: 40px;
+        border-radius: 0 10px 30px 0;
+    }
+
+    li {
+        color: #4F5665;
+        font-family: Rubik;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: relative;
+        padding: 0 10px;
+    }
+
+    li::before {
+        content: '';
+        background: #F53838;
+        position: absolute;
+        bottom: -8px;
+        height: 3px;
+        width: 0;
+        transition: 0.3s;
+    }
+
+    li:hover:before {
+        width: 100%;
+    }
+}
+
+.buttons__2 {
+    display: none;
+
+    @media screen and (max-width:811px) {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    @media screen and (max-width:450px) {
+        gap: 10px;
+    }
+
+}
+.passive__area{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+    @media screen and (max-width:971px) {
+        gap: 20px;
+    }
+
+    @media screen and (max-width:811px) {
+        display: none;
+    }
+}
+
+.navbar__sign__in {
+    cursor: pointer;
+    background: none;
+    border: 0;
+    color: #0B132A;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    @media screen and (max-width:381px) {
+        font-size: 14px;
+    }
+}
+
+.navbar__sign__up {
+    cursor: pointer;
+    border-radius: 50px;
+    border: 1px solid #F53855;
+    padding: 13px 45px;
+    color: #F53855;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: 0;
+    transition: 0.1s;
+
+    @media screen and (max-width:881px) {
+        padding: 13px 30px;
+    }
+
+    @media screen and (max-width:450px) {
+        padding: 8px 15px;
+    }
+
+    @media screen and (max-width:381px) {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+.navbar__sign__up:active {
+    transform: scale(0.9);
+}
+
+.navbar__sign__in:active {
+    transform: scale(0.9);
+}

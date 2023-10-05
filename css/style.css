@@ -1,0 +1,398 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.navbar {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media screen and (max-width: 381px) {
+  .navbar__logo {
+    gap: 5px;
+  }
+}
+@media screen and (max-width: 381px) {
+  .navbar__logo img {
+    width: 28px;
+    height: 30px;
+  }
+}
+.navbar__logo p {
+  color: #0B132A;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media screen and (max-width: 381px) {
+  .navbar__logo p {
+    font-size: 16px;
+  }
+}
+.navbar__logo span {
+  color: #0B132A;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+@media screen and (max-width: 381px) {
+  .navbar__logo span {
+    font-size: 16px;
+  }
+}
+
+#menu {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+@media screen and (max-width: 381px) {
+  .menu {
+    gap: 5px;
+  }
+}
+
+.toggle {
+  font-size: 30px;
+  color: #F53855;
+  display: none;
+}
+@media screen and (max-width: 811px) {
+  .toggle {
+    display: block;
+  }
+}
+@media screen and (max-width: 381px) {
+  .toggle {
+    font-size: 26px;
+  }
+}
+
+#menu:checked ~ .navbar__menu {
+  left: 0;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  transition: 0.4s;
+}
+@media screen and (max-width: 971px) {
+  .navbar__menu {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 881px) {
+  .navbar__menu {
+    gap: 10px;
+  }
+}
+@media screen and (max-width: 811px) {
+  .navbar__menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 40%;
+    box-shadow: 0 0 10px #F53838;
+    height: 50vh;
+    margin-top: 80px;
+    flex-direction: column;
+    gap: 40px;
+    align-items: start;
+    padding: 40px;
+    border-radius: 0 10px 30px 0;
+  }
+}
+.navbar__menu li {
+  color: #4F5665;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  padding: 0 10px;
+}
+.navbar__menu li::before {
+  content: "";
+  background: #F53838;
+  position: absolute;
+  bottom: -8px;
+  height: 3px;
+  width: 0;
+  transition: 0.3s;
+}
+.navbar__menu li:hover:before {
+  width: 100%;
+}
+
+.buttons__2 {
+  display: none;
+}
+@media screen and (max-width: 811px) {
+  .buttons__2 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .buttons__2 {
+    gap: 10px;
+  }
+}
+
+.passive__area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media screen and (max-width: 971px) {
+  .buttons {
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 811px) {
+  .buttons {
+    display: none;
+  }
+}
+
+.navbar__sign__in {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  color: #0B132A;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media screen and (max-width: 381px) {
+  .navbar__sign__in {
+    font-size: 14px;
+  }
+}
+
+.navbar__sign__up {
+  cursor: pointer;
+  border-radius: 50px;
+  border: 1px solid #F53855;
+  padding: 13px 45px;
+  color: #F53855;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  background: 0;
+  transition: 0.1s;
+}
+@media screen and (max-width: 881px) {
+  .navbar__sign__up {
+    padding: 13px 30px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .navbar__sign__up {
+    padding: 8px 15px;
+  }
+}
+@media screen and (max-width: 381px) {
+  .navbar__sign__up {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+.navbar__sign__up:active {
+  transform: scale(0.9);
+}
+
+.navbar__sign__in:active {
+  transform: scale(0.9);
+}
+
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 100px;
+}
+
+.header__title {
+  color: #0B132A;
+  font-family: Rubik;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 70px;
+  margin-bottom: 20px;
+}
+.header__title span {
+  color: #0B132A;
+  font-family: Rubik;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+}
+
+.header__text {
+  color: #4F5665;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 50px;
+}
+.header__text span {
+  color: #4F5665;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.header__btn {
+  padding: 17.5px 77.5px;
+  border-radius: 10px;
+  background: #F53838;
+  border: 0;
+  cursor: pointer;
+  color: #FFF;
+  font-family: Rubik;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25px;
+  position: relative;
+  box-shadow: 0 15px 20px rgba(245, 56, 56, 0.35);
+  transition: 0.2s;
+}
+
+.header__btn:active {
+  transform: scale(0.9);
+}
+
+.header__left {
+  width: 520px;
+}
+
+.header__right {
+  background-image: url(../img/hero.png);
+  height: 400px;
+  width: 650px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header__info {
+  margin-top: 127px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 215px;
+  padding: 30px 90px;
+  box-shadow: 0 5px 20px #e0dede;
+  gap: 90px;
+  margin-bottom: 95px;
+}
+
+.header__info__col {
+  width: 32%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 36.5px;
+}
+
+.line {
+  width: 3px;
+  height: 100%;
+  background-color: #EEEFF2;
+}
+
+.header__col__left {
+  border-radius: 70px;
+  background: #FFECEC;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.count {
+  color: #0B132A;
+  font-family: Rubik;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 5px;
+}
+
+.header__col__suptitle {
+  color: #4F5665;
+  font-family: Rubik;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}/*# sourceMappingURL=style.css.map */
