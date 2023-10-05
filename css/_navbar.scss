@@ -2,12 +2,22 @@
     height: 80px;
     display: flex;
     align-items: center;
+
+    @media screen and (max-width:811px) {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #fff;
+    }
 }
 
 .navbar__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    
 }
 
 .navbar__logo {
@@ -102,7 +112,7 @@
         top: 0;
         left: -100%;
         width: 40%;
-        box-shadow: 0 0 10px #F53838;
+        box-shadow: 0 0 5px #F53838;
         height: 50vh;
         margin-top: 80px;
         flex-direction: column;
@@ -110,6 +120,8 @@
         align-items: start;
         padding: 40px;
         border-radius: 0 10px 30px 0;
+        z-index: 99999999999;
+        background-color: #ffff;
     }
 
     li {
