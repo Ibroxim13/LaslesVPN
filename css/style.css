@@ -144,7 +144,7 @@ body {
     position: fixed;
     top: 0;
     left: -100%;
-    width: 40%;
+    width: 60%;
     box-shadow: 0 0 5px #F53838;
     height: 50vh;
     margin-top: 80px;
@@ -281,9 +281,24 @@ body {
   gap: 40px;
   margin-top: 100px;
 }
+@media screen and (max-width: 811px) {
+  .header__content {
+    margin-top: 150px;
+  }
+}
 @media screen and (max-width: 765px) {
   .header__content {
     flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 525px) {
+  .header__content {
+    margin-top: 100px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header__content {
+    gap: 20px;
   }
 }
 
@@ -309,6 +324,12 @@ body {
     margin-bottom: 15px;
   }
 }
+@media screen and (max-width: 525px) {
+  .header__title {
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
 .header__title span {
   color: #0B132A;
   font-family: Rubik;
@@ -327,6 +348,12 @@ body {
   .header__title span {
     font-size: 30px;
     line-height: 40px;
+  }
+}
+@media screen and (max-width: 525px) {
+  .header__title span {
+    font-size: 25px;
+    line-height: 30px;
   }
 }
 
@@ -349,6 +376,12 @@ body {
     margin-bottom: 20px;
   }
 }
+@media screen and (max-width: 400px) {
+  .header__text {
+    margin-bottom: 15px;
+    line-height: 25px;
+  }
+}
 .header__text span {
   color: #4F5665;
   font-family: Rubik;
@@ -356,6 +389,11 @@ body {
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
+}
+@media screen and (max-width: 400px) {
+  .header__text span {
+    line-height: 25px;
+  }
 }
 
 .header__btn {
@@ -373,6 +411,7 @@ body {
   position: relative;
   box-shadow: 0 15px 20px rgba(245, 56, 56, 0.35);
   transition: 0.2s;
+  z-index: -1;
 }
 @media screen and (max-width: 1069px) {
   .header__btn {
@@ -382,6 +421,12 @@ body {
 @media screen and (max-width: 935px) {
   .header__btn {
     padding: 10px 40px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header__btn {
+    padding: 10px 25px;
+    font-size: 14px;
   }
 }
 
@@ -410,6 +455,21 @@ body {
 @media screen and (max-width: 765px) {
   .header__left {
     width: 500px;
+  }
+}
+@media screen and (max-width: 525px) {
+  .header__left {
+    width: 360px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header__left {
+    width: 280px;
+  }
+}
+@media screen and (max-width: 325px) {
+  .header__left {
+    width: 230px;
   }
 }
 
@@ -445,6 +505,24 @@ body {
     height: 310px;
   }
 }
+@media screen and (max-width: 525px) {
+  .header__right {
+    width: 385px;
+    height: 240px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .header__right {
+    width: 305px;
+    height: 190px;
+  }
+}
+@media screen and (max-width: 325px) {
+  .header__right {
+    width: 240px;
+    height: 150px;
+  }
+}
 
 .header__info {
   margin-top: 87px;
@@ -457,6 +535,7 @@ body {
   box-shadow: 0 5px 20px #e0dede;
   gap: 90px;
   margin-bottom: 95px;
+  border-radius: 15px;
 }
 @media screen and (max-width: 1140px) {
   .header__info {
@@ -474,6 +553,22 @@ body {
     justify-content: space-between;
     padding: 20px 40px;
     height: 180px;
+  }
+}
+@media screen and (max-width: 845px) {
+  .header__info {
+    height: 140px;
+  }
+}
+@media screen and (max-width: 733px) {
+  .header__info {
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 95px;
   }
 }
 
@@ -495,6 +590,17 @@ body {
     gap: 26px;
   }
 }
+@media screen and (max-width: 845px) {
+  .header__info__col {
+    width: 25%;
+    gap: 15px;
+  }
+}
+@media screen and (max-width: 733px) {
+  .header__info__col {
+    width: 100%;
+  }
+}
 
 .line {
   width: 3px;
@@ -506,6 +612,12 @@ body {
     height: 50%;
   }
 }
+@media screen and (max-width: 733px) {
+  .line {
+    height: 3px;
+    width: 100%;
+  }
+}
 
 .header__col__left {
   border-radius: 70px;
@@ -515,6 +627,12 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media screen and (max-width: 375px) {
+  .header__col__left {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .count {
@@ -533,6 +651,11 @@ body {
     margin-bottom: 0;
   }
 }
+@media screen and (max-width: 375px) {
+  .count {
+    font-size: 16px;
+  }
+}
 
 .header__col__suptitle {
   color: #4F5665;
@@ -545,5 +668,10 @@ body {
 @media screen and (max-width: 935px) {
   .header__col__suptitle {
     font-size: 18px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header__col__suptitle {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
