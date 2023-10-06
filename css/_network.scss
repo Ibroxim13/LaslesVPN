@@ -1,0 +1,53 @@
+.network {
+    padding: 120px 0 0 0;
+}
+
+.map {
+    margin: 0 auto;
+
+    img {
+        width: 100%;
+    }
+}
+
+.network__title {
+    color: #0B132A;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 50px;
+    margin-bottom: 20px;
+
+    @media screen and (max-width:665px) {
+        font-size: 25px;
+        line-height: 35px;
+        margin-bottom: 10px;
+    }
+}
+
+.network__text {
+    width: 555px;
+    color: #4F5665;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0 auto;
+    padding-bottom: 155px;
+
+    @media screen and (max-width:665px) {
+        padding-bottom: 80px;
+        width: 400px;
+    }
+
+    @media screen and (max-width:530px) {
+        padding-bottom: 40px;
+        width: 280px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+}
