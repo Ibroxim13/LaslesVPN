@@ -1061,6 +1061,12 @@ body {
   justify-content: space-between;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 1034px) {
+  .sponsors {
+    justify-content: center;
+    gap: 20px;
+  }
+}
 
 .customers {
   padding: 125px 0 60px;
@@ -1078,6 +1084,19 @@ body {
   margin: 0 auto;
   padding-bottom: 20px;
 }
+@media screen and (max-width: 595px) {
+  .customers__title {
+    width: 300px;
+    padding-bottom: 15px;
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .customers__title {
+    width: 280px;
+  }
+}
 
 .customers__text {
   width: 555px;
@@ -1091,10 +1110,28 @@ body {
   line-height: 30px;
   margin: 0 auto;
 }
+@media screen and (max-width: 595px) {
+  .customers__text {
+    width: 350px;
+    padding-bottom: 30px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .customers__text {
+    width: 280px;
+  }
+}
 
 .customers__cards {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 999px) {
+  .customers__cards {
+    justify-content: center;
+    gap: 40px;
+  }
 }
 
 .customer__card {
@@ -1103,6 +1140,18 @@ body {
   border: 2px solid #DDD;
   padding: 30px;
   transition: 0.3s;
+  height: 250px;
+}
+@media screen and (max-width: 1185px) {
+  .customer__card {
+    width: 320px;
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .customer__card {
+    height: 260px;
+  }
 }
 
 .customer__card:hover {
@@ -1162,6 +1211,13 @@ body {
   line-height: 30px;
   margin-top: 20px;
 }
+@media screen and (max-width: 350px) {
+  .customer__card__text {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 26px;
+  }
+}
 
 .customer__footer {
   display: flex;
@@ -1174,6 +1230,11 @@ body {
   align-items: center;
   gap: 15px;
 }
+@media screen and (max-width: 370px) {
+  .customer__footer__left {
+    gap: 10px;
+  }
+}
 
 .carusel {
   width: 20px;
@@ -1181,12 +1242,24 @@ body {
   border-radius: 50%;
   background: #DDE0E4;
 }
+@media screen and (max-width: 370px) {
+  .carusel {
+    width: 15px;
+    height: 15px;
+  }
+}
 
 .carusel__active {
   width: 35px;
   height: 20px;
   border-radius: 20px;
   background-color: #F53838;
+}
+@media screen and (max-width: 370px) {
+  .carusel__active {
+    width: 25px;
+    height: 15px;
+  }
 }
 
 .customer__footer__right {
@@ -1205,6 +1278,12 @@ body {
   font-size: 25px;
   color: #F53838;
 }
+@media screen and (max-width: 370px) {
+  .direction__1 {
+    padding: 7px;
+    font-size: 18px;
+  }
+}
 
 .direction__2 {
   background-color: #F53838;
@@ -1216,4 +1295,10 @@ body {
   font-size: 25px;
   color: #fff;
   border: 2px solid #F53838;
+}
+@media screen and (max-width: 370px) {
+  .direction__2 {
+    padding: 7px;
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=style.css.map */
